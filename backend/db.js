@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 mongoose.set("strictQuery", false);
 
 
-const mongoURI = 'mongodb+srv://deathwish07:Athuu007@clster0.ip6panv.mongodb.net/foodie_mern?retryWrites=true&w=majority'
+const mongoURI = 'mongodb://deathwish07:Athuu007@ac-qkrlde7-shard-00-00.ip6panv.mongodb.net:27017,ac-qkrlde7-shard-00-01.ip6panv.mongodb.net:27017,ac-qkrlde7-shard-00-02.ip6panv.mongodb.net:27017/foodie_mern?ssl=true&replicaSet=atlas-9xzl0m-shard-0&authSource=admin&retryWrites=true&w=majority'
 const mongoDB = async () => {
     await mongoose.connect(mongoURI, { useNewUrlParser: true }, async (err, result) => {
         if (err) console.log("---", err)
