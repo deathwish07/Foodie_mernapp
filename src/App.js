@@ -12,6 +12,7 @@ import {
   Route,
   Routes,
 } from 'react-router-dom';
+import SignUp from './screens/SignUp';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element = {<Home/>} />
           <Route path="/login" element = {<Login/>} />
+          <Route path="/createuser" element = {<SignUp/>} />
         </Routes>
       </div>
     </Router>
